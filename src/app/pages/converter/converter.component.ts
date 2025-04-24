@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-converter',
   imports: [],
   templateUrl: './converter.component.html',
-  styleUrl: './converter.component.scss'
+  styleUrls: ['./converter.component.scss'],
+  standalone: true 
 })
 export class ConverterComponent {
 
