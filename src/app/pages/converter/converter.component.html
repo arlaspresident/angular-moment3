@@ -1,1 +1,29 @@
-<p>converter works!</p>
+<h2>Konvertera Meter ↔ Feet</h2>
+
+<label>
+  Meter:
+  <input [(ngModel)]="meters" (input)="convertToFeet()" type="number">
+</label>
+<p>{{ meters }} meter = {{ feet }} feet</p>
+
+<label>
+  Feet:
+  <input [(ngModel)]="feet" (input)="convertToMeters()" type="number">
+</label>
+<p>{{ feet }} feet = {{ meters }} meter</p>
+
+<hr>
+
+<h2>Konvertera Celsius ↔ Fahrenheit</h2>
+
+<label>
+  Celsius:
+  <input [(ngModel)]="celsius" (input)="convertToFahrenheit()" type="number">
+</label>
+<p>{{ celsius }} °C = {{ fahrenheit }} °F</p>
+
+<label>
+  Fahrenheit:
+  <input [(ngModel)]="fahrenheit" (input)="convertToCelsius()" type="number">
+</label>
+<p>{{ fahrenheit }} °F = {{ celsius }} °C</p>
