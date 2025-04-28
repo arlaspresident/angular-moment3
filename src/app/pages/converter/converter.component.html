@@ -1,29 +1,35 @@
-<h2>Konvertera Meter ↔ Feet</h2>
+<div class="converter-container">
 
-<label>
-  Meter:
-  <input [(ngModel)]="meters" (input)="convertToFeet()" type="number">
-</label>
-<p>{{ meters }} meter = {{ feet }} feet</p>
-
-<label>
-  Feet:
-  <input [(ngModel)]="feet" (input)="convertToMeters()" type="number">
-</label>
-<p>{{ feet }} feet = {{ meters }} meter</p>
-
-<hr>
-
-<h2>Konvertera Celsius ↔ Fahrenheit</h2>
-
-<label>
-  Celsius:
-  <input [(ngModel)]="celsius" (input)="convertToFahrenheit()" type="number">
-</label>
-<p>{{ celsius }} °C = {{ fahrenheit }} °F</p>
-
-<label>
-  Fahrenheit:
-  <input [(ngModel)]="fahrenheit" (input)="convertToCelsius()" type="number">
-</label>
-<p>{{ fahrenheit }} °F = {{ celsius }} °C</p>
+    <div class="card">
+      <h2>Konvertera Meter ↔ Feet</h2>
+  
+      <div class="input-group">
+        <label>Meter:</label>
+        <input [(ngModel)]="meters" (input)="convertToFeet()" type="number">
+      </div>
+      <p>{{ meters }} meter = {{ feet }} feet</p>
+  
+      <div class="input-group">
+        <label>Feet:</label>
+        <input [(ngModel)]="feet" (input)="convertToMeters()" type="number">
+      </div>
+      <p>{{ feet }} feet = {{ meters }} meter</p>
+    </div>
+  
+    <div class="card">
+      <h2>Konvertera Celsius ↔ Fahrenheit</h2>
+  
+      <div class="input-group">
+        <label>Celsius:</label>
+        <input [(ngModel)]="celsius" (input)="convertToFahrenheit()" type="number">
+      </div>
+      <p>{{ celsius }} °C = {{ fahrenheit }} °F</p>
+  
+      <div class="input-group">
+        <label>Fahrenheit:</label>
+        <input [(ngModel)]="fahrenheit" (input)="convertToCelsius()" type="number">
+      </div>
+      <p>{{ fahrenheit }} °F = {{ celsius }} °C</p>
+    </div>
+  
+  </div> 
